@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 30px 50px;
-  background-color: rgba(233, 64, 208, 0.308);
+  background-color: rgba(216, 115, 33, 0.411);
 }
 #storeTitle {
   font-size: 42px;
@@ -24,7 +24,7 @@
   border-radius: 5px;
   max-height: 40px;
   padding: 5px 10px;
-  color: fuchsia;
+  color: orange;
   font-size: 16px;
   background-color: white;
 }
@@ -38,7 +38,7 @@
   border-radius: 50%;
   min-height: 20px;
   min-width: 20px;
-  color: fuchsia;
+  color: orange;
   text-align: center;
   align-items: center;
   display: grid;

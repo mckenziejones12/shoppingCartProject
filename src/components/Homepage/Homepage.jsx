@@ -1,9 +1,21 @@
 import NavBar from "../Navigation/NavBar";
-import { useState } from "react";
+import FeaturedItem from "../FeaturedItem/FeaturedItem";
+import { useState, useEffect } from "react";
 import "./homepage.css";
 
 const Homepage = () => {
   const [numOfItemsInCart, setNumOfItemsInCart] = useState(0);
+  const [featuredItems, setFeaturedItems] = useState([]);
+
+  //fetch photos from API
+  useEffect(() => {
+    fetch("https://fakestoreapi.com/products/category/women's clothing?limit=3")
+      .then((response) => response.json())
+      .then((result) => {
+        setFeaturedItems(result);
+        console.log(result);
+      });
+  }, []);
 
   return (
     <div>
@@ -17,10 +29,21 @@ const Homepage = () => {
           <br />
           <button className="homepageShop shopButton">Shop Now</button>
         </div>
-        <div id="featuredItems">
-          <div className="individualitem">thing 1</div>
-          <div className="individualivtem">thing 2</div>
-          <div className="individualivtem">thing 3</div>
+        <div id="secondaryContent">
+          <div id="secondaryContentTitle">Featured Items</div>
+          <div id="featuredItems">
+            {featuredItems.map((featuredItem) => {
+              return (
+                <FeaturedItem
+                  key={featuredItem.id}
+                  imageId={featuredItem.id}
+                  imageUrl={featuredItem.image}
+                  itemTitle={featuredItem.title}
+                  itemPrice={featuredItem.price}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 body {
-  background-image: url("./images/heelsBackground.jpeg");
+  background-image: url("./images/womanOnMountain.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-color: lavender;
@@ -9,8 +9,8 @@ body {
   display: flex;
   flex-flow: column;
   height: 100%;
-  margin: 35% 15% 20% 15%;
-  gap: 100px;
+  margin: 35% 15% 10% 15%;
+  gap: 150px;
 }
 #primaryContent {
   text-align: right;
@@ -22,7 +22,7 @@ body {
   font-size: 48px;
 }
 .homepageShop {
-  background-color: fuchsia;
+  background-color: orange;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
@@ -31,7 +31,7 @@ body {
   margin-right: 20px;
 }
 .homepageShop:hover {
-  color: fuchsia;
+  color: orange;
   background-color: white;
 }
 #featuredItems {
@@ -39,7 +39,19 @@ body {
   justify-content: space-evenly;
   padding-right: 100px;
   padding-left: 100px;
+  gap: 10px;
 }
 .shopButton {
   cursor: pointer;
+}
+#secondaryContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#secondaryContentTitle {
+  color: white;
+  font-size: 28px;
+  letter-spacing: 1.5px;
+  border-bottom: 2px solid white;
 }

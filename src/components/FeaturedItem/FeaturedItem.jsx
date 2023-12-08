@@ -1,10 +1,12 @@
+import "./featuredItem.css";
 const FeaturedItem = ({ imageId, imageUrl, itemTitle, itemPrice, onClick }) => {
   return (
-    <div>
-      <img src={imageUrl} />
-      <div>{itemTitle}</div>
-      <div>{itemPrice}</div>
-      onClick={() => onClick(imageId)}
+    <div className="featuredItemCard" onClick={() => onClick(imageId)}>
+      <img src={imageUrl} height="200px" width="175px" borderRadius="5px" />
+      <div className="itemTitle">{itemTitle}</div>
+      <div className="itemPrice">${itemPrice}</div>
     </div>
   );
 };
+
+export default FeaturedItem;
