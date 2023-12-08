@@ -1,27 +1,46 @@
 #navBar {
   display: flex;
   justify-content: space-between;
-  padding: 30px;
-  background-color: rgba(171, 235, 235, 0.3);
-  margin: none;
+  padding: 30px 50px;
+  background-color: rgba(233, 64, 208, 0.308);
 }
 #storeTitle {
   font-size: 42px;
   letter-spacing: 1.5px;
+  color: white;
 }
 #navBarLinks {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
   align-self: center;
 }
 #cartIcon {
   max-height: 30px;
   align-self: center;
 }
-.button {
+.navBarShop {
   border: none;
   border-radius: 5px;
   max-height: 40px;
   padding: 5px 10px;
+  color: fuchsia;
+  font-size: 16px;
+  background-color: white;
+}
+
+#cartIcon:hover {
+  cursor: pointer;
+}
+#inCartContainer {
+  background-color: white;
+  padding: 3px;
+  border-radius: 50%;
+  min-height: 20px;
+  min-width: 20px;
+  color: fuchsia;
+  text-align: center;
+  align-items: center;
+  display: grid;
+  align-self: center;
 }

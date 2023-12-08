@@ -1,12 +1,9 @@
-import NavBar from "./components/Navigation/NavBar";
 import "./App.css";
+import Homepage from "./components/Homepage/Homepage";
+import { useState } from "react";
 
 function App() {
-  return (
-    <div>
-      <NavBar />
-    </div>
-  );
+  return <Homepage />;
 }
 
 export default App;

@@ -1,8 +1,5 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  margin: none;
-  background-color: lavender;
-  background-image: url("./images/heelsBackground.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  margin: 0px;
+  height: 100%;
 }
