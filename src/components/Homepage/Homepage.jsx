@@ -3,10 +3,19 @@ import FeaturedItem from "../FeaturedItem/FeaturedItem";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./homepage.css";
+import { useNavigate } from "react-router";
 
 const Homepage = () => {
+  const navigate = useNavigate();
   const [numOfItemsInCart, setNumOfItemsInCart] = useState(0);
   const [featuredItems, setFeaturedItems] = useState([]);
+
+  const handleItemClick = (imageId) => {
+    console.log("featured item was clicked");
+    console.log(imageId);
+    // Programatically push to shop page
+    navigate("shop");
+  };
 
   //fetch photos from API
   useEffect(() => {
@@ -43,6 +52,7 @@ const Homepage = () => {
                   imageUrl={featuredItem.image}
                   itemTitle={featuredItem.title}
                   itemPrice={featuredItem.price}
+                  onClick={handleItemClick}
                 />
               );
             })}
