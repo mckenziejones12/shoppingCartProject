@@ -28,18 +28,7 @@
 #cartIcon:hover {
   cursor: pointer;
 }
-#inCartContainer {
-  background-color: white;
-  padding: 3px;
-  border-radius: 50%;
-  min-height: 20px;
-  min-width: 20px;
-  color: orange;
-  text-align: center;
-  align-items: center;
-  display: grid;
-  align-self: center;
-}
+
 a {
   text-decoration: none;
   color: white;
