@@ -1,5 +1,6 @@
 import NavBar from "../Navigation/NavBar";
 import FeaturedItem from "../FeaturedItem/FeaturedItem";
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./homepage.css";
 
@@ -27,7 +28,9 @@ const Homepage = () => {
           <br />
           <span id="emphasizedText">Walk the Walk.</span>
           <br />
-          <button className="homepageShop shopButton">Shop Now</button>
+          <Link to="shop" className="homepageShop shopButton">
+            Shop Now
+          </Link>
         </div>
         <div id="secondaryContent">
           <div id="secondaryContentTitle">Featured Items</div>
