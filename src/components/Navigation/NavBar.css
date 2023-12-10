@@ -20,13 +20,9 @@
   align-self: center;
 }
 .navBarShop {
-  border: none;
-  border-radius: 5px;
-  max-height: 40px;
-  padding: 5px 10px;
-  color: orange;
   font-size: 22px;
   font-weight: 600;
+  align-self: center;
 }
 
 #cartIcon:hover {
