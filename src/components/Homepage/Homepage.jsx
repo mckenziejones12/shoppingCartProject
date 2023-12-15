@@ -2,7 +2,7 @@ import NavBar from "../Navigation/NavBar";
 import FeaturedItem from "../FeaturedItem/FeaturedItem";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import "./homepage.css";
+import "./Homepage.css";
 import { useNavigate } from "react-router";
 import { useContext } from "react";
 import { ItemsCountContext } from "../../ItemsCountContext";

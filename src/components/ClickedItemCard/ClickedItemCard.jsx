@@ -1,4 +1,4 @@
-import "./clickedItemCard.css";
+import "./ClickedItemCard.css";
 
 const ClickedItemCard = ({
   imageId,

@@ -1,4 +1,4 @@
-import "./saleCount.css";
+import "./SaleCount.css";
 
 export const SaleCount = ({ count }) => {
   let displayNumberOfItems = count;

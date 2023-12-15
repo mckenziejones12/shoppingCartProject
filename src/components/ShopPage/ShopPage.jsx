@@ -2,7 +2,7 @@ import NavBar from "../Navigation/NavBar";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router";
 import InventoryItem from "../InventoryItem/InventoryItem";
-import "./shopPage.css";
+import "./ShopPage.css";
 import { useContext } from "react";
 import { ItemsCountContext } from "../../ItemsCountContext";
 

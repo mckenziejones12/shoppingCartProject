@@ -1,4 +1,4 @@
-import "./inventoryItem.css";
+import "./InventoryItem.css";
 
 const InventoryItem = ({
   itemId,

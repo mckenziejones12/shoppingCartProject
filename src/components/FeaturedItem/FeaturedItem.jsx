@@ -1,4 +1,4 @@
-import "./featuredItem.css";
+import "./FeaturedItem.css";
 const FeaturedItem = ({ imageId, imageUrl, itemTitle, itemPrice, onClick }) => {
   return (
     <div className="featuredItemCard" onClick={() => onClick(imageId)}>
