@@ -1,10 +1,10 @@
-import NavBar from "../Navigation/NavBar";
+import NavBar from "./NavBar";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router";
-import InventoryItem from "../InventoryItem/InventoryItem";
+import InventoryItem from "./InventoryItem";
 import "./ShopPage.css";
 import { useContext } from "react";
-import { ItemsCountContext } from "../../ItemsCountContext";
+import { ItemsCountContext } from "../ItemsCountContext";
 
 const ShopPage = () => {
   const navigate = useNavigate();

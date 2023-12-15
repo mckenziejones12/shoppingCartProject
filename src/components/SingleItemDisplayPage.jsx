@@ -1,9 +1,9 @@
-import ClickedItemCard from "../ClickedItemCard/ClickedItemCard";
+import ClickedItemCard from "./ClickedItemCard";
 import { useState, useEffect } from "react";
-import NavBar from "../Navigation/NavBar";
+import NavBar from "./NavBar";
 import { useParams } from "react-router-dom";
 import { useContext } from "react";
-import { ItemsCountContext } from "../../ItemsCountContext";
+import { ItemsCountContext } from "../ItemsCountContext";
 
 const SingleItemDisplayPage = () => {
   const { itemId } = useParams();

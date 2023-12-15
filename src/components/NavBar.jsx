@@ -1,7 +1,7 @@
 import "./NavBar.css";
 import { Link } from "react-router-dom";
-import { SaleCount } from "../SaleCount/SaleCount";
-import ShoppingCart from "../../../images/shopping-cart.png";
+import { SaleCount } from "./SaleCount";
+import ShoppingCart from "../../images/shopping-cart.png";
 
 const NavBar = ({ numOfItemsInCart }) => {
   // Come from context provider

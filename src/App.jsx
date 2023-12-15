@@ -1,10 +1,10 @@
 import { useState, React } from "react";
 import "./App.css";
-import Homepage from "./components/Homepage/Homepage";
+import Homepage from "./components/Homepage";
 import { ItemsCountContext } from "./ItemsCountContext";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ShopPage from "./components/ShopPage/ShopPage.jsx";
-import SingleItemDisplayPage from "./components/SingleItemDisplayPage/SingleItemDisplayPage.jsx";
+import ShopPage from "./components/ShopPage.jsx";
+import SingleItemDisplayPage from "./components/SingleItemDisplayPage.jsx";
 
 const router = createBrowserRouter([
   {

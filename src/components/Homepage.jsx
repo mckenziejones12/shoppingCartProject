@@ -1,11 +1,11 @@
-import NavBar from "../Navigation/NavBar";
-import FeaturedItem from "../FeaturedItem/FeaturedItem";
+import NavBar from "./NavBar";
+import FeaturedItem from "./FeaturedItem";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./Homepage.css";
 import { useNavigate } from "react-router";
 import { useContext } from "react";
-import { ItemsCountContext } from "../../ItemsCountContext";
+import { ItemsCountContext } from "../ItemsCountContext";
 
 const Homepage = () => {
   const navigate = useNavigate();
