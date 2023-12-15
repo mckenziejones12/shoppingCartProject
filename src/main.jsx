@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     element: <ShopPage />,
   },
   {
-    path: "shop/singleitemdisplay",
+    path: "shop/singleitemdisplay/:itemId",
     element: <SingleItemDisplayPage />,
   },
 ]);

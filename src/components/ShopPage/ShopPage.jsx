@@ -4,9 +4,9 @@ import { useNavigate } from "react-router";
 import InventoryItem from "../InventoryItem/InventoryItem";
 import "./shopPage.css";
 const ShopPage = () => {
+  const navigate = useNavigate();
   const [numOfItemsInCart, setNumOfItemsInCart] = useState(0);
   const [allInventory, setAllInventory] = useState([]);
-  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products/category/women's clothing?limit=6")
@@ -20,9 +20,9 @@ const ShopPage = () => {
   const handleAddToCartClick = () => {
     setNumOfItemsInCart(numOfItemsInCart + 1);
   };
-  const handleCardClick = () => {
+  const handleCardClick = (itemId) => {
     console.log("card click works");
-    navigate("singleitemdisplay");
+    navigate(`singleitemdisplay/${itemId}`);
   };
 
   return (
@@ -33,6 +33,7 @@ const ShopPage = () => {
           return (
             <InventoryItem
               key={featuredItem.id}
+              itemId={featuredItem.id}
               imageId={featuredItem.id}
               imageUrl={featuredItem.image}
               itemTitle={featuredItem.title}

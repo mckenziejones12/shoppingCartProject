@@ -10,11 +10,11 @@ const Homepage = () => {
   const [numOfItemsInCart, setNumOfItemsInCart] = useState(0);
   const [featuredItems, setFeaturedItems] = useState([]);
 
-  const handleItemClick = (imageId) => {
+  const handleItemClick = (itemId) => {
     console.log("featured item was clicked");
-    console.log(imageId);
+
     // Programatically push to shop page
-    navigate("shop");
+    navigate(`shop/singleitemdisplay/${itemId}`);
   };
 
   //fetch photos from API

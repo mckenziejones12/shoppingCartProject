@@ -1,6 +1,7 @@
 import "./inventoryItem.css";
 
 const InventoryItem = ({
+  itemId,
   imageId,
   imageUrl,
   itemTitle,
@@ -10,10 +11,7 @@ const InventoryItem = ({
 }) => {
   return (
     <div className="inventoryItemCard">
-      <div
-        className="inventoryItemDetails"
-        onClick={() => onCardClick(imageId)}
-      >
+      <div className="inventoryItemDetails" onClick={() => onCardClick(itemId)}>
         <img src={imageUrl} height="200px" width="175px" />
         <div className="itemTitle">{itemTitle}</div>
         <div className="itemPrice">${itemPrice}</div>
