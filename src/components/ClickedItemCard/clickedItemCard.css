@@ -1,22 +1,19 @@
-.inventoryItemCard {
+.ClickedItemCard {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   gap: 20px;
   align-content: center;
   align-items: center;
   text-align: center;
-  border: 2px solid white;
   padding: 10px;
   border-radius: 5px;
   background-color: white;
-  max-width: 300px;
+  max-width: 500px;
 }
-.inventoryItemDetails {
+.itemDetails {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  align-items: center;
 }
 
 .addToCartButton {

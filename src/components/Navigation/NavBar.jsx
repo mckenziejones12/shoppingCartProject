@@ -1,6 +1,7 @@
 import "./navBar.css";
 import { Link } from "react-router-dom";
 import { SaleCount } from "../SaleCount/SaleCount";
+import ShoppingCart from "../../../images/shopping-cart.png";
 
 const NavBar = ({ numOfItemsInCart }) => {
   return (
@@ -10,9 +11,9 @@ const NavBar = ({ numOfItemsInCart }) => {
       </Link>
       <div id="navBarLinks">
         <div className="navBarShop shopButton">
-          <Link to="shop">Shop</Link>
+          <Link to="/shop">Shop</Link>
         </div>
-        <img id="cartIcon" src="images/shopping-cart.png" alt="cart" />
+        <img id="cartIcon" src={ShoppingCart} alt="cart" />
         <SaleCount count={numOfItemsInCart} />
       </div>
     </nav>

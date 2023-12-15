@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ShopPage from "./components/ShopPage/ShopPage.jsx";
 import App from "./App.jsx";
+import SingleItemDisplayPage from "./components/SingleItemDisplayPage/SingleItemDisplayPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
   {
     path: "shop",
     element: <ShopPage />,
+  },
+  {
+    path: "shop/singleitemdisplay",
+    element: <SingleItemDisplayPage />,
   },
 ]);
 

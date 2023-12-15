@@ -37,7 +37,7 @@ const Homepage = () => {
           <br />
           <span id="emphasizedText">Walk the Walk.</span>
           <br />
-          <Link to="shop" className="homepageShop shopButton">
+          <Link to="/shop" className="homepageShop shopButton">
             Shop Now
           </Link>
         </div>
