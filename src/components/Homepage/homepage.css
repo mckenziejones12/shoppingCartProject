@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-flow: column;
   height: 100%;
-  margin: 35% 15% 10% 15%;
+  margin: 25% 15% 10% 15%;
   gap: 150px;
 }
 #primaryContent {

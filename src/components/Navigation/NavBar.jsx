@@ -4,6 +4,9 @@ import { SaleCount } from "../SaleCount/SaleCount";
 import ShoppingCart from "../../../images/shopping-cart.png";
 
 const NavBar = ({ numOfItemsInCart }) => {
+  // Come from context provider
+  // const numOfItems =
+
   return (
     <nav id="navBar">
       <Link to="/" id="storeTitle">

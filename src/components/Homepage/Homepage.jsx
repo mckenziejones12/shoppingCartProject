@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./homepage.css";
 import { useNavigate } from "react-router";
+import { useContext } from "react";
+import { ItemsCountContext } from "../../ItemsCountContext";
 
 const Homepage = () => {
   const navigate = useNavigate();
-  const [numOfItemsInCart, setNumOfItemsInCart] = useState(0);
+  const { itemCount } = useContext(ItemsCountContext);
   const [featuredItems, setFeaturedItems] = useState([]);
 
   const handleItemClick = (itemId) => {
-    console.log("featured item was clicked");
-
     // Programatically push to shop page
     navigate(`shop/singleitemdisplay/${itemId}`);
   };
@@ -23,13 +23,12 @@ const Homepage = () => {
       .then((response) => response.json())
       .then((result) => {
         setFeaturedItems(result);
-        console.log(result);
       });
   }, []);
 
   return (
     <div>
-      <NavBar numOfItemsInCart={numOfItemsInCart}></NavBar>
+      <NavBar numOfItemsInCart={itemCount}></NavBar>
 
       <div id="homepageContent">
         <div id="primaryContent">
