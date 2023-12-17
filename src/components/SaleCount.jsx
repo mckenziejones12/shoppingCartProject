@@ -6,5 +6,5 @@ export const SaleCount = ({ count }) => {
     displayNumberOfItems = "9+";
   }
 
-  return <div id="inCartContainer">{displayNumberOfItems}</div>;
+  return <div id="inCartContainer">{displayNumberOfItems || 0}</div>;
 };
